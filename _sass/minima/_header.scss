@@ -1,0 +1,157 @@
+.header {
+    align-items: center;
+    background: #292828;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 80px;
+    transition: all .1s ease-in-out;
+
+    @media (max-width: 900px) {
+        bottom: initial;
+        flex-flow: row nowrap;
+        right: 0;
+        height: 80px;
+        width: 100%;
+    }
+}
+
+.header-brand {
+    width: 100%;
+
+    @media (max-width: 900px) {
+        width: initial;
+    }
+}
+
+.header-brand-link {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+
+    @media (max-width: 900px) {
+        flex-flow: row nowrap;
+    }
+}
+
+.header-brand-logo {
+    height: 46px;
+    position: relative;
+    margin-top: -10px;
+    width: 31px;
+}
+
+.header-brand-letter {
+    position: absolute;
+    font-size: 36px;
+    font-weight: 800;
+    top: 0;
+    left: 0;
+
+    &.white {
+        color: #fff;
+        z-index: 1;
+    }
+
+    &.green {
+        color: #50E3C2;
+        top: 2px;
+        left: 2px;
+        z-index: 0;
+    }
+}
+
+.header-brand-name {
+    color: #fff;
+    font-size: 9px;
+    text-transform: uppercase;
+    text-align: center;
+
+    @media (max-width: 900px) {
+        text-align: left;
+    }
+}
+
+//header-nav-list
+.header-nav {
+    width: 100%;
+
+    @media (max-width: 900px) {
+        width: initial;
+    }
+}
+
+.header-nav-list {
+    display: flex;
+    flex-flow: column nowrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+
+    @media (max-width: 900px) {
+        flex-flow: row nowrap;
+        justify-content: center;
+    }
+}
+
+.header-nav-item {
+    margin-bottom: 30px;
+    @media (max-width: 900px) {
+        margin-bottom: 0;
+        width: 50px;
+    }
+}
+
+.header-nav-link {
+    display: block;
+    position: relative;
+    text-align: center;
+    width: 100%;
+
+    span {
+        position: absolute;
+        color: #50E3C2;
+        font-size: 10px;
+        font-weight: 500;
+        text-transform: uppercase;
+        top: 3px;
+        left: 0;
+        width: 100%;
+        opacity: 0;
+        transition: all .1s ease-in-out;
+    }
+
+    i {
+        color: #fff;
+        font-size: 20px;
+        opacity: .5;
+        transition: all .1s ease-in-out;
+    }
+
+    &:hover {
+        span {
+            opacity: 1;
+        }
+
+        i {
+            opacity: 0;
+        }
+    }
+
+    &.active {
+        span {
+            opacity: 1;
+        }
+
+        i {
+            opacity: 0;
+        }
+    }
+}

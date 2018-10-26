@@ -1,0 +1,47 @@
+.home {
+    background: url("/assets/bg-block.jpg") no-repeat center center;
+    background-size: cover;
+    border-bottom: 20px #50E3C2 solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.home-welcome {
+    text-align: center;
+
+    h1 {
+        font-size: 4rem;
+        color: #fff;
+        line-height: 4rem;
+        font-weight: 800;
+        margin-bottom: 2rem;
+    }
+
+    p {
+        color: #9B9B9B;
+        font-size: 1.125rem;
+        margin-bottom: 2rem;
+
+        span {
+            color: #717171;
+        }
+    }
+
+    a {
+        border: 2px #50E3C2 solid;
+        color: #50E3C2;
+        display: inline-block;
+        font-size: 1.125rem;
+        padding: 10px 40px;
+        border-radius: 4px;
+
+        &:hover {
+            background: #50E3C2;
+            color: #282828;
+            text-decoration: none;
+        }
+    }
+}
