@@ -3,6 +3,7 @@
     background-size: cover;
     border-bottom: 20px #50E3C2 solid;
     display: flex;
+    padding: 20px;
     align-items: center;
     justify-content: center;
     height: 100vh;
@@ -13,17 +14,35 @@
     text-align: center;
 
     h1 {
-        font-size: 4rem;
+        font-size: 4em;
         color: #fff;
-        line-height: 4rem;
+        line-height: 1.2;
         font-weight: 800;
-        margin-bottom: 2rem;
+        margin-bottom: 20px;
+        transition: all .1s ease-in-out;
+
+        @media (max-width: 768px) {
+            font-size: 2em;
+        }
+
+        @media (max-width: 480px) {
+            font-size: 1.6em;
+        }
     }
 
     p {
         color: #9B9B9B;
-        font-size: 1.125rem;
-        margin-bottom: 2rem;
+        font-size: 1.125em;
+        margin-bottom: 20px;
+        transition: all .1s ease-in-out;
+
+        @media (max-width: 767px) {
+            font-size: 1em;
+        }
+
+        @media (max-width: 480px) {
+            font-size: .875em;
+        }
 
         span {
             color: #717171;
@@ -34,7 +53,7 @@
         border: 2px #50E3C2 solid;
         color: #50E3C2;
         display: inline-block;
-        font-size: 1.125rem;
+        font-size: 1.125em;
         padding: 10px 40px;
         border-radius: 4px;
 
