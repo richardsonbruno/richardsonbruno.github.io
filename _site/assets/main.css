@@ -2854,7 +2854,8 @@ h1::after {
   @media (max-width: 900px) {
     .about {
       padding: 80px 20px 20px;
-      align-items: flex-start; } }
+      align-items: flex-start;
+      overflow-x: auto; } }
   .about .home-welcome {
     text-align: left;
     max-width: 800px; }
