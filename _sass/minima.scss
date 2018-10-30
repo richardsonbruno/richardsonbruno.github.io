@@ -15,7 +15,7 @@ $base-line-height: 1.5 !default;
 $spacing-unit:     30px !default;
 
 $text-color:       #111 !default;
-$background-color: #fdfdfd !default;
+$background-color: #292828 !default;
 $brand-color:      #2a7ae2 !default;
 
 $grey-color:       #828282 !default;
@@ -50,8 +50,10 @@ $on-laptop:        800px !default;
 // Import partials.
 @import
   "minima/base",
+  "minima/animate",
   "minima/header",
   "minima/home",
+  "minima/about",
   "minima/layout",
   "minima/syntax-highlighting"
 ;

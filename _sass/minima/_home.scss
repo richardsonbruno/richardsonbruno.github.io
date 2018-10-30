@@ -3,11 +3,15 @@
     background-size: cover;
     border-bottom: 20px #50E3C2 solid;
     display: flex;
-    padding: 20px;
+    padding: 20px 20px 20px 80px;
     align-items: center;
     justify-content: center;
     height: 100vh;
     width: 100%;
+
+    @media (max-width: 900px) {
+        padding: 20px;
+    }
 }
 
 .home-welcome {
