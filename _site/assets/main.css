@@ -2793,7 +2793,9 @@ h1::after {
   align-items: center;
   justify-content: center;
   height: 100vh;
-  width: 100%; }
+  width: 100%;
+  position: fixed;
+  z-index: 10; }
   @media (max-width: 900px) {
     .home {
       padding: 20px; } }
@@ -2847,11 +2849,12 @@ h1::after {
   height: 100vh;
   width: 100%;
   position: fixed;
-  top: 0;
-  left: 0; }
+  left: 0;
+  top: 0; }
   @media (max-width: 900px) {
     .about {
-      padding: 20px; } }
+      padding: 80px 20px 20px;
+      align-items: flex-start; } }
   .about .home-welcome {
     text-align: left;
     max-width: 800px; }
@@ -2984,6 +2987,7 @@ h1::after {
  * Page content
  */
 .page-content {
+  overflow: hidden;
   flex: 1; }
 
 .page-heading {
