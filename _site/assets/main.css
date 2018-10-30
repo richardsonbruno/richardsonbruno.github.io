@@ -15,7 +15,6 @@ dl, dd, ol, ul, figure {
  */
 body {
   font: 400 16px/1.5 "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  overflow: hidden;
   color: #111;
   background-color: #292828;
   -webkit-text-size-adjust: 100%;
