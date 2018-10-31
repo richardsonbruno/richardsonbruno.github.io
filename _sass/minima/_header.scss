@@ -104,6 +104,10 @@
         flex-flow: row nowrap;
         justify-content: center;
     }
+
+    .header-nav-link {
+        width: 100%;
+    }
 }
 
 .header-nav-item {
@@ -115,10 +119,9 @@
 }
 
 .header-nav-link {
-    display: block;
+    display: inline-block;
     position: relative;
     text-align: center;
-    width: 100%;
 
     span {
         position: absolute;

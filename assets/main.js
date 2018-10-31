@@ -8,6 +8,8 @@
 
         index.addEventListener("click", function(event) {
             event.preventDefault();
+            let hash = this.hash.substr(1);
+            let block = document.querySelector(`.${hash}`);
 
             document.querySelectorAll(".header-nav-link").forEach(function(index){
                 index.classList.remove("active");
@@ -17,32 +19,11 @@
             
             document.querySelectorAll(".block").forEach(function(index){
                 index.classList.remove("bounceOut", "bounceIn");
+                index.classList.add("bounceOut");
+                block.classList.remove("bounceOut");
+                block.classList.add("bounceIn");
             });
 
-            let hash = this.hash.substr(1);
-            switch(hash){
-                case 'home':
-                    document.querySelector(".about").classList.add("bounceOut");
-                    document.querySelector(".home").classList.add("bounceIn");
-                    break;
-                
-                case 'about':
-                    document.querySelector(".home").classList.add("bounceOut");
-                    document.querySelector(".about").classList.add("bounceIn");
-                    break;
-
-                case 'skill':
-                    console.log('skill foi');
-                    break;
-
-                case 'works':
-                    console.log('about foi');
-                    break;
-
-                case 'contacts':
-                    console.log('contacts foi');
-                    break;
-            }
         });
     });
 })();

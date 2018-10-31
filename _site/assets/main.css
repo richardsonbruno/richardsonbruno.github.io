@@ -2714,6 +2714,8 @@ h1::after {
     .header-nav-list {
       flex-flow: row nowrap;
       justify-content: center; } }
+  .header-nav-list .header-nav-link {
+    width: 100%; }
 
 .header-nav-item {
   margin-bottom: 30px; }
@@ -2723,10 +2725,9 @@ h1::after {
       width: 50px; } }
 
 .header-nav-link {
-  display: block;
+  display: inline-block;
   position: relative;
-  text-align: center;
-  width: 100%; }
+  text-align: center; }
   .header-nav-link span {
     position: absolute;
     color: #50E3C2;
@@ -2840,10 +2841,10 @@ h1::after {
       color: #282828;
       text-decoration: none; }
 
-.about {
+.about, .skill, .works, .contacts {
   background: #292828;
   display: flex;
-  padding: 20px 20px 20px 120px;
+  padding: 20px 20px 20px 150px;
   align-items: center;
   justify-content: flex-start;
   height: 100vh;
@@ -2852,14 +2853,14 @@ h1::after {
   left: 0;
   top: 0; }
   @media (max-width: 900px) {
-    .about {
+    .about, .skill, .works, .contacts {
       padding: 80px 20px 20px;
       align-items: flex-start;
       overflow-x: auto; } }
-  .about .home-welcome {
+  .about .home-welcome, .skill .home-welcome, .works .home-welcome, .contacts .home-welcome {
     text-align: left;
     max-width: 800px; }
-  .about p {
+  .about p, .skill p, .works p, .contacts p {
     font-weight: 100; }
 
 /**
