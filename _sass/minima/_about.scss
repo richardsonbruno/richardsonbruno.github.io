@@ -1,5 +1,5 @@
 .about, .skill, .works, .contacts {
-    background: #292828;
+    background: #262525;
     display: flex;
     padding: 20px 20px 20px 150px;
     align-items: center;
@@ -23,5 +23,39 @@
 
     p {
         font-weight: 100;
+    }
+}
+
+.about {
+    align-items: flex-start;
+    overflow-x: auto;
+}
+
+.blog-list {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.blog-list-item {
+    padding: 5px;
+    width: 50%;
+}
+
+.blog-list-link {
+    border: none !important;
+    display: flex !important;
+    flex-flow: column nowrap !important;
+    padding: 0 !important;
+
+    &:hover {
+        background: none !important;
+    }
+
+    p {
+        font-size: .875em;
     }
 }

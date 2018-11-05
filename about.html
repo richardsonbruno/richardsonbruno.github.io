@@ -1,0 +1,51 @@
+---
+layout: default
+---
+
+<section class="block about animated">
+    <div class="home-welcome">
+        <h1>
+            About me
+        </h1>
+
+        <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+        </p>
+
+        <p>
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+        </p>
+
+        <p>
+            It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
+        </p>
+
+        <p>
+            It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        </p>
+
+        <h2 class="block-title">Blog</h2>
+
+        <ul class="blog-list">
+            
+            {% for posts in site.posts %}
+            <li class="blog-list-item">
+                <a href="{{ posts.url | prepend: site.baseurl}}" title="{{ posts.title }}" class="blog-list-link">
+                    <figure class="blog-list-image">
+                        <img src="https://i1.wp.com/gamelogia.com.br/wp-content/uploads/2016/11/gamer.jpg?resize=1280%2C640" alt="">
+                    </figure>
+                    
+                    <div class="blog-list-inner">
+                        <h3>{{ posts.title }}</h3>
+                        <h4>{{ posts.date | date_to_string }}</h4>
+                        <p>
+                            It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                        </p>
+                    </div>
+                </a>
+            </li>
+            {% endfor %}
+
+        </ul>
+    </div>
+</section>

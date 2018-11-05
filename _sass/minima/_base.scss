@@ -16,7 +16,6 @@ dl, dd, ol, ul, figure {
 body {
   font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
   color: $text-color;
-  background-color: $background-color;
   -webkit-text-size-adjust: 100%;
   -webkit-font-feature-settings: "kern" 1;
      -moz-font-feature-settings: "kern" 1;
@@ -264,6 +263,56 @@ h1 {
 
   &::after {
     content: "</h1>";
+    display: block;
+    font-size: 12px;
+    font-family: 'Dancing Script', cursive;
+    color: #999;
+  }
+}
+
+h2 {
+  font-size: 3em;
+  color: #fff;
+  line-height: 1.2;
+  font-weight: 800;
+  margin-bottom: 20px;
+  transition: all .1s ease-in-out;
+
+  &::before {
+    content: "<h2>";
+    display: block;
+    font-size: 12px;
+    font-family: 'Dancing Script', cursive;
+    color: #999;
+  }
+
+  &::after {
+    content: "</h2>";
+    display: block;
+    font-size: 12px;
+    font-family: 'Dancing Script', cursive;
+    color: #999;
+  }
+}
+
+h3 {
+  font-size: 1.5em;
+  color: #fff;
+  line-height: 1.2;
+  font-weight: 800;
+  margin-bottom: 20px;
+  transition: all .1s ease-in-out;
+
+  &::before {
+    content: "<h3>";
+    display: block;
+    font-size: 12px;
+    font-family: 'Dancing Script', cursive;
+    color: #999;
+  }
+
+  &::after {
+    content: "</h3>";
     display: block;
     font-size: 12px;
     font-family: 'Dancing Script', cursive;
